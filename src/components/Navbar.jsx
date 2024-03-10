@@ -1,10 +1,10 @@
 import Link from "next/link"
 
 const links = [
-  { url: "/", title: "Inicio" },
-  { url: "/about", title: "Nosotros" },
-  { url: "/portfolio", title: "Portfolio" },
-  { url: "/contact", title: "Contacto" },
+    { url: "/", title: "Inicio" },
+    { url: "/about", title: "Nosotros" },
+    { url: "/portfolio", title: "Portfolio" },
+    { url: "/contact", title: "Contacto" },
   
 ];
 
@@ -21,22 +21,21 @@ const Navbar = () => {
     {/* MENU */}
     <div className="">
       {/* BOTON MENU */}
-      <button className="w-10 h-8 flex flex-col justify-between"> 
-        <div className="w-10 h-1 bg-black rounded"></div>
-        <div className="w-10 h-1 bg-black rounded"></div>
-        <div className="w-10 h-1 bg-black rounded"></div>
-      </button>
+      <button className="w-10 h-8 flex flex-col justify-between">
+        <div className="w-10 h-1 bg-white rounded"></div>
+        <div className="w-10 h-1 bg-white rounded"></div>
+        <div className="w-10 h-1 bg-white rounded"></div>
+        </button>
       {/* LISTA MENU */}
-        <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4x1">
-          {links.map((link => (
-            <link href={link.url} key={link.title}>
-            {link.title}
-            </link>
-       )))}
-      </div>
-    </div>
-    </div>
-    ) 
-};
+      <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4x1">
+        {links.map(link => {
+          return (
+          <Link href={link.url} key={link.title}>{link.title}</Link>);
+          })}
+          </div>
+          </div>
+          </div>
+          );
+        };
 
 export default Navbar
