@@ -24,7 +24,7 @@ const Navbar = () => {
     {/* MENU RESPONSIVE */}
     <div className="">
       {/* BOTON MENU */}
-      <button className="w-10 h-8 bg-black flex flex-col justify-between relative z-50" 
+      <button className="w-10 h-8 flex flex-col justify-between relative z-50" 
       onClick={() => setOpen ((prev) => !prev)}>
       <div className="w-10 h-1 bg-white rounded"></div>
       <div className="w-10 h-1 bg-white rounded"></div>
