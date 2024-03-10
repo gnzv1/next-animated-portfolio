@@ -1,7 +1,6 @@
 import Link from "next/link"
 
 const links = [
-
   { url: "/", title: "Inicio" },
   { url: "/about", title: "Nosotros" },
   { url: "/portfolio", title: "Portfolio" },
@@ -14,9 +13,7 @@ const Navbar = () => {
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
     {/*logo */}
     <div className="">
-        <Link 
-        href="/"
-        className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center">
+        <Link href="/" className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center -z-50">
         <span className="text-white mr-1">Test</span>
         <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">Hola</span>
         </Link>
