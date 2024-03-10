@@ -14,28 +14,30 @@ const Navbar = () => {
     {/*logo */}
     <div className="">
         <Link href="/" className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center -z-50 relative">
-        <span className="text-white mr-1">Test</span>
-        <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">Hola</span>
+          <span className="text-white mr-1">Test</span>
+          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">Hola</span>
         </Link>
     </div>
     {/* MENU RESPONSIVE */}
     <div className="">
       {/* BOTON MENU */}
-      <button className="w-10 h-8 flex flex-col justify-between relative">
-        <div className="w-10 h-1 bg-white rounded"></div>
-        <div className="w-10 h-1 bg-white rounded"></div>
-        <div className="w-10 h-1 bg-white rounded"></div>
-        </button>
+      <button className="w-10 h-8 bg-black flex flex-col justify-between relative z-50">
+        <div className="w-10 h-2 bg-white rounded"></div>
+        <div className="w-10 h-2 bg-white rounded"></div>
+        <div className="w-10 h-2 bg-white rounded"></div>
+      </button>
         {/* LISTA MENU */}
         <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4x1">
-        {links.map(link => {
-          return (
-          <Link href={link.url} key={link.title}>{link.title}</Link>);
-          })}
+          {links.map(link => (
+            <Link href={link.url} key={link.title}>
+            {link.title}
+            </Link>
+            ))
+        }
           </div>
           </div>
           </div>
           );
         };
 
-export default Navbar
+export default Navbar;
