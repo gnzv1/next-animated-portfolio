@@ -23,8 +23,8 @@ const Navbar = () => {
       {/* BOTON MENU */}
       <button className="w-10 h-8 flex flex-col justify-between relative">
         <div className="w-10 h-1 bg-white rounded"></div>
-        <div className="w-10 h-1 bg-black rounded"></div>
-        <div className="w-10 h-1 bg-black rounded"></div>
+        <div className="w-10 h-1 bg-white rounded"></div>
+        <div className="w-10 h-1 bg-white rounded"></div>
         </button>
         {/* LISTA MENU */}
         <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4x1">
