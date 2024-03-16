@@ -14,12 +14,17 @@ const Navbar = () => {
   const [open,setOpen] = useState(false);
   return (
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-    {/*logo */}
-    <div className="">
+    <div className="hidden md:flex gap-4">
+      {links.map(link=> (
+        <Link href={link.url} key={link.title}>{link.title}</Link>
+        ))}
+      {/*logo */}
+      <div className="md:hidden">
         <Link href="/" className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center -z-50 relative">
           <span className="text-white mr-1">Test</span>
           <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">Hola</span>
         </Link>
+    </div>
     </div>
     {/* MENU RESPONSIVE */}
     <div className="">
